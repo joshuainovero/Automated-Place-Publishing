@@ -1,2 +1,1 @@
-print("Hello world, from casdasdlient!")
-local function a() end
+print("Hello world, fasdarom casdasdlient!")
