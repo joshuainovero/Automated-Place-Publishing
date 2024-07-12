@@ -20,4 +20,4 @@ jobs:
 
     -run: rojo build -o game.rbxl
 
-    -run: rbxcloud experience publish -f game.rbxl -p 18449133471 -u 6252511605 -t published -a ${{ secrets.API_KEY }}
+    -run: rbxcloud experience publish --filename game.rbxl --place-id 18449133471 --universe-id 6252511605 --version-type published --api-key ${{ secrets.API_KEY }}
