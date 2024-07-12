@@ -14,14 +14,14 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v3
 
-    - uses: ok-nick/setup-aftman@v0.3.0
+    - uses: ok-nick/setup-aftman@v0.4.2
       name: Install aftman
       with:
           token: ${{ SECRETS.GITHUB_TOKEN }}
 
     - name: Lint
       run: |
-        selene src
+        selene ./src
 
   style:
     name: Styling
